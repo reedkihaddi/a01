@@ -22,7 +22,6 @@ df = df.dropna()
 
 # Find the minimum
 dfMin = grouped['PRICE'].nsmallest(2)
-# df2.to_csv('./output/check2.csv')
 groupedMin = dfMin.groupby('SKU')
 # Create list of rows to append data
 rows = []
